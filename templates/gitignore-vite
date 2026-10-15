@@ -1,23 +1,29 @@
 # Dependencies
 node_modules/
+.pnpm-store/
 
 # Build outputs
 dist/
-scripts/
 build/
-.next/
 out/
+.next/
 
 # Environment variables
 .env
 .env.*
 !.env.example
 
+# Virtual environments
+venv/
+.venv/
+
 # OS files
 .DS_Store
 Thumbs.db
+desktop.ini
 
 # Logs
+logs/
 *.log
 npm-debug.log*
 pnpm-debug.log*
@@ -26,10 +32,13 @@ yarn-error.log*
 
 # IDE
 .vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
 .idea/
 .freebuff/
 *.swp
 *.swo
+*~
 
 # Cache
 .cache/
@@ -44,5 +53,6 @@ coverage/
 .nyc_output/
 
 # Misc
+*.bak
 *.tmp
 *.temp
